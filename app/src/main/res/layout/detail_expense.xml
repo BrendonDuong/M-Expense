@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Detail_Expense_Activity"
+    android:background="@drawable/travel"
+    android:padding="30dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="@drawable/background_input"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Detail Expense"
+            android:layout_marginTop="-40dp"
+            android:textSize="40dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/category_2"
+            android:layout_width="320dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/editext"
+            android:ems="10"
+            android:hint="Category"
+            android:inputType="textPersonName"
+            android:textSize="20dp"
+            android:paddingLeft="14dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/total_expense_2"
+            android:layout_width="320dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/editext"
+            android:ems="10"
+            android:hint="Total Expense"
+            android:textSize="20dp"
+            android:inputType="date"
+            android:paddingLeft="14dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/category_2" />
+
+        <TextView
+            android:id="@+id/date_time"
+            android:layout_width="320dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/editext"
+            android:ems="10"
+            android:hint="Date Time"
+            android:textSize="20dp"
+            android:inputType="date"
+            android:paddingLeft="14dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/total_expense_2" />
+
+        <TextView
+            android:id="@+id/notes_2"
+            android:layout_width="320dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="16dp"
+            android:textSize="20dp"
+            android:background="@drawable/editext"
+            android:ems="10"
+            android:hint="Notes"
+            android:inputType="date"
+            android:paddingLeft="14dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/date_time" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/delete_button_2"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="20dp"
+            android:backgroundTint="@color/red"
+            android:background="@drawable/btn"
+            android:text="Delete"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/update_button" />
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/btn"
+            android:backgroundTint="@color/silver"
+            android:text="Cancel"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/add_button" />
+
+    </LinearLayout>
+
+        <Button
+            android:id="@+id/btnExport_data"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/btn"
+            android:backgroundTint="@color/light_blue"
+            android:text="Export data"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/add_button" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
