@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">M-Expense</string>
+    <string name="app_search">Search</string>
+
+    <string-array name="category">
+        <item>Hotel Service</item>
+        <item>Food Expense</item>
+        <item>Travel Expenses</item>
+    </string-array>
+
+</resources>
